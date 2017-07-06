@@ -76,7 +76,7 @@ class ActiveCampaign extends Connector {
 			$component = "auth";
 		}
 
-		$class = ucwords($component); // IE: "contact" becomes "Contact"
+        $class = 'ActiveCampaign\\'.ucwords($component); // IE: "contact" becomes "Contact"
 		$class = "" . $class;
 		// IE: new Contact();
 
@@ -97,7 +97,7 @@ class ActiveCampaign extends Connector {
 
 		if ($method == "list") {
 			// reserved word
-			$method = "list_";
+			$method = "listing";
 		}
 
 		$class->debug = $this->debug;
