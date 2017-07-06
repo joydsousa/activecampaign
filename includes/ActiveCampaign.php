@@ -17,7 +17,6 @@ class ActiveCampaign extends Connector {
 	function __construct($url, $api_key, $api_user = "", $api_pass = "") {
 		$this->url_base = $this->url = $url;
 		$this->api_key = $api_key;
-		parent::__construct($url, $api_key, $api_user, $api_pass);
 	}
 
 	function version($version) {

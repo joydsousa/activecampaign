@@ -14,8 +14,6 @@ class Tracking extends ActiveCampaign {
 		$this->url_base = $url_base;
 		$this->url = $url;
 		$this->api_key = $api_key;
-
-        parent::__construct($url, $api_key);
     }
 
 	/*

@@ -14,9 +14,7 @@ class Account extends ActiveCampaign {
 		$this->url_base = $url_base;
 		$this->url = $url;
 		$this->api_key = $api_key;
-
-		parent::__construct($url, $api_key);
-	}
+    }
 
 	function add($params, $post_data) {
 		$request_url = "{$this->url}&api_action=account_add&api_output={$this->output}";
